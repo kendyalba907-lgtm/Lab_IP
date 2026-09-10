@@ -1,0 +1,7 @@
+total= float(input("Ingrese el total de la cuenta: "))
+propina = float(input("Ingrese el porcentaje de propina que quiera dejar: "))
+personas = int(input("Ingrese el número de personas que van a pagar la cuenta: "))
+monto_propina = total * (propina / 100)
+print(f"El monto de la propina es: {monto_propina:.2f}")
+print(f"El monto total a pagar es: {total + monto_propina:.2f}")
+print(f"El monto a pagar por persona es: {(total + monto_propina) / personas:.2f}")
